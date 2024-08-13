@@ -1,8 +1,26 @@
-# React + Vite
+# AI Content Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple web server built using Node.js and Express that leverages Google's Generative AI to generate content based on user prompts. The server accepts prompts through a REST API and returns AI-generated content.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Content Generation**: Generate content using Google's Generative AI.
+- **CORS Support**: Allows cross-origin requests from specific origins.
+- **Express Server**: A lightweight and fast server using Express.
+- **Environment Variables**: API keys and other sensitive data are stored in environment variables for security.
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js (v14.x or later)
+- npm (v6.x or later)
+- A Google API key for accessing Generative AI.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/ai-content-generator.git
+   cd ai-content-generator
