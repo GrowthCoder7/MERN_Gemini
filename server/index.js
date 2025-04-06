@@ -6,7 +6,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 const app = express();
 
 const corsOptions = {
-  origin: ["https://localhost:5173", "http://chatbot.netlify.app"],
+  origin: ["http://localhost:5173", "http://localhost:5174"],
 };
 
 app.use(cors(corsOptions));
@@ -28,4 +28,4 @@ app.post("/generate", async (req, res) => {
   }
 });
 
-app.listen(8081, console.log("Server is running"));
+app.listen(8080, console.log("Server is running"));
