@@ -17,7 +17,7 @@ const genAI = new GoogleGenerativeAI(process.env.API_KEY);
 app.post("/generate", async (req, res) => {
   const { prompt } = req.body;
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
     const result = await model.generateContent(prompt);
     const response = await result.response;
     const text = response.text();
@@ -28,4 +28,4 @@ app.post("/generate", async (req, res) => {
   }
 });
 
-app.listen(8080, console.log("Server is running"));
+app.listen(8081, console.log("Server is running"));

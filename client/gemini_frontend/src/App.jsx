@@ -5,7 +5,7 @@ import "./App.css";
 import Markdown from 'react-markdown';
 
 const makeRequestAPI = async (prompt) => {
-  const res = await axios.post("http://localhost:8080/generate", { prompt });
+  const res = await axios.post("https://mern-gemini-backend.onrender.com/generate", { prompt });
   console.log(res.data);
   return res.data;
 };
