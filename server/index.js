@@ -6,7 +6,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 const app = express();
 
 const corsOptions = {
-  origin: "https://mern-gemini.vercel.app",
+  origin: ["https://localhost:5173", "http://chatbot.netlify.app"],
 };
 
 app.use(cors(corsOptions));
