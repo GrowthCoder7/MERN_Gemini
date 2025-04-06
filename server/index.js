@@ -6,7 +6,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 const app = express();
 
 const corsOptions = {
-  origin: ["http://localhost:5174", "http://localhost:5173"],
+  origin: "https://mern-gemini.vercel.app",
 };
 
 app.use(cors(corsOptions));
